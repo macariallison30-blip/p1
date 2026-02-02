@@ -1,1 +1,66 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
 
+/* Container */
+.box-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+    width: 100vw;
+    font-family: Tahoma, serif;
+    font-size: 40px;
+}
+
+/* Base box styling */
+.box-content {
+    width: 100px;
+    height: 100px;
+    border-top: 1px solid #687291;
+    text-align: center;
+    line-height: 100px;
+    transition: background-color 0.5s ease, transform 0.5s ease;
+}
+
+/* A — Gradient */
+.box-a {
+    background: linear-gradient(#dfe1e7, #ffffff);
+}
+
+/* B — Gradient */
+.box-b {
+    background: linear-gradient(#eeeff2, #dfe1e7);
+}
+
+/* C — Transition on hover */
+.box-c {
+    background-color: #eeeff2;
+}
+
+.box-c:hover {
+    background-color: #ffd966;
+    transform: scale(1.15);
+}
+
+/* D — Static (no advanced effects) */
+.box-d {
+    background-color: #dfe1e7;
+}
+
+/* E — Gradient */
+.box-e {
+    background: linear-gradient(135deg, #ffffff, #dfe1e7);
+}
+
+/* F — Transition on hover */
+.box-f {
+    background-color: #eeeff2;
+}
+
+.box-f:hover {
+    transform: rotate(5deg);
+}
